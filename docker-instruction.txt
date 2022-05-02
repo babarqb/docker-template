@@ -1,0 +1,7 @@
+build container form Dockerfile
+command -> docker build . -t my-node-app
+run docker contaner -> docker run -p 3000:8000 --name my-node-app-container my-node-app
+create contianer with volume ->
+docker run -p 3000:8000 --name my-node-app-container -v ${PWD}:/usr/src/app my-node-app
+// if {$pwd} error then use -v ${PWD}:/usr/src/app
+docker run -p 3000:8000 --name my-node-app-container -v ${PWD}:/usr/src/app my-node-app
